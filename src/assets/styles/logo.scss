@@ -1,0 +1,16 @@
+@import 'variables';
+
+.logo-with-wordmark {
+  display: flex;
+}
+
+.logo-wordmark {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-transform: uppercase;
+  color: $primary-color;
+  font-family: $logo-font;
+  align-self: center;
+}

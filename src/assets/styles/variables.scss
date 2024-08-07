@@ -1,0 +1,22 @@
+$header-font: "Josefin Sans", "Poppins", sans-serif;
+$primary-font: "Poppins", sans-serif;
+$logo-font: "Josefin Sans", "Poppins", sans-serif;
+
+$primary-color: #666693;
+$secondary-color: #e5cf87;
+$alt-color: #d16587;
+$white: #efefef;
+$light-grey: #dddddd;
+$black: #333333;
+
+@mixin media-small {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}

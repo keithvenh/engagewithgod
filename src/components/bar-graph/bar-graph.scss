@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables.scss';
+
+.bar-graph-container {
+  height: 36px;
+  padding: 6px 0;
+}
+
+.bar-graph {
+  width: 100%;
+  position: relative;
+  .bar-graph-max {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid $primary-color;
+    box-sizing: border-box;
+    height: 36px;
+    display: flex;
+    justify-content: flex-end;
+    color: $primary-color;
+    align-items: center;
+    padding-right: 6px;
+    border-radius: 6px;
+  }
+  .bar-graph-current {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    box-sizing: border-box;
+    height: 30px;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: flex-start;
+    color: $primary-color;
+    align-items: center;
+    padding-left: 6px;
+    border-radius: 6px
+  }
+}

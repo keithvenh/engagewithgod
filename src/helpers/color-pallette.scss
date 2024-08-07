@@ -1,0 +1,50 @@
+.color-pallette {
+  background-color: #fff;
+
+  .main-colors {
+    display: flex;
+    flex-wrap: wrap;
+    color: #efefef;
+    div {
+      width: 50%;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .white {
+      background-color: #efefef;
+      color: #333333;
+    }
+    .black {
+      background-color: #333333;
+    }
+    .primary {
+      background-color: #666693;
+    }
+    .secondary {
+      background-color: #e5cf87;
+    }
+    .current-comp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 160px;
+      width: 100%
+    }
+  }
+
+  .alt-colors {
+    display: flex;
+    flex-wrap: wrap;
+    color: #efefef;
+    div {
+      width: 25%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+}
