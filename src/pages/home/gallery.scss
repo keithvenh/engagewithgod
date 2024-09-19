@@ -1,0 +1,35 @@
+@import '../../assets/styles/variables.scss';
+
+.gallery {
+  padding: 2vh;
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  p {
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      width: 75vw;
+      margin: 2vh 0;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@include media-large {
+  .gallery {
+    .image-gallery {
+      img {
+        width: 25vw;
+        margin: 2vw;
+      }
+    }
+  }
+}

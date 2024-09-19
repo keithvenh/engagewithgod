@@ -7,7 +7,9 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <LogoWithWordmark color="blue" size="32px" />
+      <a href='/'>
+        <LogoWithWordmark color="blue" size="32px" />
+      </a>
       <Navbar />
     </header>
   )

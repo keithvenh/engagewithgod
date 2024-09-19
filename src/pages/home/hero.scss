@@ -1,0 +1,46 @@
+@import '../../assets/styles/variables.scss';
+
+.home-hero {
+
+  align-items: center;
+  background-color: $alt-color;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 112px 12px 64px 12px;
+
+  h1.brand-wordmark {
+    font-size: 1.5em;
+    line-height: .8em;
+    letter-spacing: 2px;
+    margin-top: .25em;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      font-size: .6em;
+    }
+
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+}
+
+// ===== DESKTOP STYLES ===== //
+@include media-large {
+
+  .home-hero {
+
+    p {
+      max-width: 33%;
+    }
+
+  }
+  
+}

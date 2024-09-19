@@ -1,0 +1,113 @@
+@import '../../assets/styles//variables.scss';
+
+.funding {
+
+  background-color: $light-grey;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 12px;
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+
+    line-height: 1.5em;
+    text-align: center;
+
+    span {
+      color: $primary-color;
+      font-weight: 500;
+    }
+
+  }
+
+  .graphs {
+
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+
+    .category {
+
+      border-bottom: 3px solid $secondary-color;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      h3 {
+        color: $alt-color;
+        letter-spacing: 2px;
+        margin: 0.5em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        flex-grow: 1;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+
+        .button {
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+      }
+
+    }
+    
+  }
+
+}
+
+// ===== DESKTOP STYLES ===== //
+@include media-large {
+
+  .funding {
+
+    p {
+      max-width: 65%;
+    }
+
+    .graphs {
+
+      flex-direction: row;
+
+      .category {
+
+        border: none;
+        border-right: 3px solid $secondary-color;
+        flex: 1;
+        padding: 12px 24px;
+
+        &:last-child {
+          border: none;
+        }
+
+        p {
+          max-width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,149 @@
+@import '../../assets/styles/variables.scss';
+
+.giving {
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 12px;
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+
+    line-height: 1.5em;
+    margin: 0.5em 0;
+    text-align: center;
+    
+    span {
+      color: $primary-color;
+      font-weight: 500;
+    }
+
+  }
+
+  .giving-links {
+
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+
+    .giving-option {
+
+      align-items: center;
+      border-bottom: 3px solid $primary-color;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 12px;
+
+      p {
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .image-container {
+
+        align-items: center;
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        width: 100%;
+
+        img, i, p {
+          max-height: 48px;
+          max-width: 75%;
+        }
+
+        i {
+          color: #333366;
+          font-size: 48px;
+        }
+
+        p {
+          color: #333366;
+          flex-grow: 0;
+          font-size: 36px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 1em;
+        }
+
+      }
+
+      &.ywam img {
+        background-color: $black;
+        box-sizing: border-box;
+        padding: 6px 24px;
+      }
+
+    }
+
+  }
+
+}
+
+// ===== DESKTOP STYLES ===== //
+@include media-large {
+
+  .giving {
+
+    p {
+      max-width: 65%;
+    }
+
+    .giving-links {
+
+      flex-direction: row;
+
+      p {
+        max-width: 100%;
+      }
+
+      .giving-option {
+
+        border: none;
+        border-right: 3px solid $primary-color;
+        width: 25%;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        .image-container {
+
+          height: 64px;
+
+          img, i, p {
+            max-height: 64px;
+          }
+
+          i {
+            font-size: 64px;
+          }
+
+          p {
+            font-size: 48px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+  
+}

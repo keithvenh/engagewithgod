@@ -1,3 +1,5 @@
+import Button from '../button/Button';
+
 export default function Navbar() {
 
   function toggleNav() {
@@ -39,10 +41,11 @@ export default function Navbar() {
       <i className='nav-icon fa-solid fa-bars' id='nav-icon' onClick={toggleNav}></i>
 
       <ul className='menu' id='nav-menu'>
-        <li>Work</li>
-        <li>About</li>
-        <li>FAQ</li>
-        <li>Donate</li>
+        <li><a href='#work'>Our Work</a></li>
+        <li><a href='#funding'>Funding</a></li>
+        <li><a href='#faqs'>FAQ</a></li>
+        <li><a href='#contact' onClick={toggleNav}>Contact Us</a></li>
+        <li onClick={toggleNav}><Button text='Donate' link='https://bit.ly/venhuizen-giving' /></li>
       </ul>
     </nav>
   )

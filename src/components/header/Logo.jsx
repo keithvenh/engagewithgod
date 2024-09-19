@@ -9,8 +9,6 @@ import { ReactComponent as VBlueLogoSvg } from '../../assets/images/icons/icon-c
 
 export default function Logo({color, size}) {
 
-  console.log(color);
-  console.log(size)
   const logos = {
     "blue": <BlueLogoSvg style={{height: size}}/>,
     "yellow": <YellowLogoSvg style={{height: size}}/>,
@@ -23,8 +21,8 @@ export default function Logo({color, size}) {
   }
 
   return (
-    <div className='logo'>
-       {logos[color]}
-    </div>
+      <div className='logo'>
+        {logos[color]}
+      </div>
   )
 }

@@ -1,0 +1,54 @@
+@import '../../assets/styles/variables.scss';
+
+
+
+.work {
+  padding: 24px 12px;
+  .value {
+    .title {
+      display: flex;
+      align-items: flex-end;
+      text-transform: uppercase;
+      color: $primary-color;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      margin: 0.5em 0;
+      &.impact .logo {
+        transform: rotate(90deg);
+      }
+      h2 {
+        margin-left: 12px;
+      }
+    }
+    .copy {
+      border-left: 3px solid $secondary-color;
+      margin-left: 0.25em;
+      .summary {
+        margin-left: 1em;
+        font-weight: 500;
+      }
+    }
+    p {
+      line-height: 1.5em;
+      margin-bottom: 1em;
+      margin-left: 2em;
+    }
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $alt-color;
+      margin-bottom: 0.5em;
+      margin-left: 1em;
+    }
+  }
+}
+
+// ===== DESKTOP STYLES ===== //
+@include media-large {
+
+  .work {
+    max-width: 65%;
+    margin: auto;
+  }
+
+}

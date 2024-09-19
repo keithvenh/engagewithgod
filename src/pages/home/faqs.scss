@@ -1,0 +1,57 @@
+@import '../../assets/styles/variables.scss';
+
+.faqs {
+  background-color: $light-grey;
+  padding: 2vh;
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  h3 {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+  }
+  .faq {
+
+    margin: 24px;
+    padding: 6px;
+    background: $white;
+    border-left: 6px solid $primary-color;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+    
+    p.question {
+      font-size: 1.2em;
+      font-weight: 500;
+      line-height: 1.2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p.answer {
+      display: none;
+      line-height: 1.2em;
+      padding: 12px 24px;
+    }
+
+    &.expanded {
+      p.answer {
+        display: block;
+      }
+    }
+  }
+}
+
+@include media-large {
+  .faqs {
+    padding: 2vw;
+    .faq {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+  }
+}
